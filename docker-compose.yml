@@ -1,0 +1,84 @@
+services:
+  postgres:
+    image: postgres:17
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1580
+      POSTGRES_DB: otp_service
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - backend
+
+  otp_service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: on-failure
+    environment:
+      # Database
+      db.url: jdbc:postgresql://postgres:5432/otp_service
+      db.user: postgres
+      db.password: 1580
+
+      # Mail (Mailtrap)
+      email.username: c4d95e0b79ef4e
+      email.password: 35c1c5490db8bf
+      email.from: example@yourapp.com
+      mail.smtp.host: sandbox.smtp.mailtrap.io
+      mail.smtp.port: 2525
+      mail.smtp.auth: "true"
+      mail.smtp.starttls.enable: "true"
+
+      # SMPP
+      smpp.host: smppsim
+      smpp.port: 2775
+      smpp.system_id: smppclient1
+      smpp.password: password
+      smpp.system_type: OTP
+      smpp.source_addr: OTPService
+
+      # Telegram
+      telegram.token: 8029711137:AAGTJtZiVMJKayPCC39VOh6qhLYLJQGTB6k
+      telegram.chat_id: "941025642"
+
+      # File channel
+      FILE_DIR: /opt/otp-files
+
+    volumes:
+      - 'C:/Users/vladi/Desktop/SpecTools/DefendOTPCode/otp-files:/opt/otp-files:rw'
+
+    ports:
+      - "8080:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      smppsim:
+        condition: service_started
+    networks:
+      - backend
+
+  smppsim:
+    build:
+      context: smppsim
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "2775:2775"
+      - "88:88"
+    networks:
+      - backend
+
+volumes:
+  db_data:
+
+networks:
+  backend:
+    driver: bridge
