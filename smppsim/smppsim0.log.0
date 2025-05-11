@@ -1,0 +1,79 @@
+2025.05.09 14:34:08 1   INFO    1 ==============================================================
+2025.05.09 14:34:08 32  INFO    1 =  SMPPSim Copyright (C) 2006 Selenium Software Ltd
+2025.05.09 14:34:08 32  INFO    1 =  SMPPSim comes with ABSOLUTELY NO WARRANTY; for details
+2025.05.09 14:34:08 32  INFO    1 =  read the license.txt file that was included in the SMPPSim distribution
+2025.05.09 14:34:08 33  INFO    1 =  This is free software, and you are welcome to redistribute it under
+2025.05.09 14:34:08 33  INFO    1 =  certain conditions; Again, see license.txt for details or read the GNU
+2025.05.09 14:34:08 33  INFO    1 =  GPL license at http://www.gnu.org/licenses/gpl.html
+2025.05.09 14:34:08 33  INFO    1 =  ...... end of legal stuff ......
+2025.05.09 14:34:08 33  INFO    1 ==============================================================
+2025.05.09 14:34:08 34  INFO    1 =  
+2025.05.09 14:34:08 34  INFO    1 =  com.seleniumsoftware.SMPPSim 2.6.11
+2025.05.09 14:34:08 34  INFO    1 =  by Martin Woolley (martin@seleniumsoftware.com)
+2025.05.09 14:34:08 34  INFO    1 =  http://www.seleniumsoftware.com
+2025.05.09 14:34:08 34  INFO    1 =  Running with the following parameters:
+2025.05.09 14:34:08 35  INFO    1 =  SMPP_PORT                               :2775
+2025.05.09 14:34:08 35  INFO    1 =  SMPP_CONNECTION_HANDLERS                :10
+2025.05.09 14:34:08 35  INFO    1 =  CONNECTION_HANDLER_CLASS                :com.seleniumsoftware.SMPPSim.StandardConnectionHandler
+2025.05.09 14:34:08 35  INFO    1 =  PROTOCOL_HANDLER_CLASS                  :com.seleniumsoftware.SMPPSim.StandardProtocolHandler
+2025.05.09 14:34:08 35  INFO    1 =  LIFE_CYCLE_MANAGER                      :com.seleniumsoftware.SMPPSim.LifeCycleManager
+2025.05.09 14:34:08 35  INFO    1 =  SMPP_CONNECTION_HANDLERS                :10
+2025.05.09 14:34:08 35  INFO    1 =  INBOUND_QUEUE_CAPACITY                  :1000
+2025.05.09 14:34:08 35  INFO    1 =  OUTBOUND_QUEUE_CAPACITY                 :1000
+2025.05.09 14:34:08 36  INFO    1 =  MESSAGE_STATE_CHECK_FREQUENCY           :5000
+2025.05.09 14:34:08 36  INFO    1 =  MAX_TIME_ENROUTE                        :10000
+2025.05.09 14:34:08 36  INFO    1 =  PERCENTAGE_THAT_TRANSITION              :75
+2025.05.09 14:34:08 36  INFO    1 =  PERCENTAGE_DELIVERED                    :90
+2025.05.09 14:34:08 36  INFO    1 =  PERCENTAGE_UNDELIVERABLE                :6
+2025.05.09 14:34:08 36  INFO    1 =  PERCENTAGE_ACCEPTED                     :2
+2025.05.09 14:34:08 36  INFO    1 =  PERCENTAGE_REJECTED                     :2
+2025.05.09 14:34:08 37  INFO    1 =  DISCARD_FROM_QUEUE_AFTER                :60000
+2025.05.09 14:34:08 37  INFO    1 =  OUTBIND_ENABLED                         :false
+2025.05.09 14:34:08 37  INFO    1 =  OUTBIND_ESME_IP_ADDRESS                 :null
+2025.05.09 14:34:08 37  INFO    1 =  OUTBIND_ESME_PORT		                :0
+2025.05.09 14:34:08 38  INFO    1 =  OUTBIND_ESME_PASSWORD                   :password
+2025.05.09 14:34:08 38  INFO    1 =  HTTP_PORT                               :88
+2025.05.09 14:34:08 38  INFO    1 =  HTTP_THREADS                            :1
+2025.05.09 14:34:08 38  INFO    1 =  DOCROOT                                 :www
+2025.05.09 14:34:08 38  INFO    1 =  AUTHORISED_FILES                        :/css/style.css,/index.htm,/inject_mo.htm,/favicon.ico,/images/logo.gif,/images/dots.gif,/user-guide.htm,/images/homepage.gif,/images/inject_mo.gif
+2025.05.09 14:34:08 38  INFO    1 =  INJECT_MO_PAGE                          :/inject_mo.htm
+2025.05.09 14:34:08 39  INFO    1 =  SMSCID                                  :SMPPSim
+2025.05.09 14:34:08 39  INFO    1 =  DELIVERY_MESSAGES_PER_MINUTE            :0
+2025.05.09 14:34:08 39  INFO    1 =  DELIVER_MESSAGES_FILE                   :N/A
+2025.05.09 14:34:08 39  INFO    1 =  LOOPBACK                                :false
+2025.05.09 14:34:08 39  INFO    1 =  CAPTURE_REQUESTS_BINARY                 :false
+2025.05.09 14:34:08 39  INFO    1 =  CAPTURE_REQUESTS_BINARY_TO_FILE         :sme_binary.capture
+2025.05.09 14:34:08 39  INFO    1 =  CAPTURE_RESPONSES_BINARY                :false
+2025.05.09 14:34:08 40  INFO    1 =  CAPTURE_RESPONSES_BINARY_TO_FILE        :smppsim_binary.capture
+2025.05.09 14:34:08 40  INFO    1 =  CAPTURE_REQUESTS_DECODED                :false
+2025.05.09 14:34:08 40  INFO    1 =  CAPTURE_REQUESTS_DECODED_TO_FILE        :sme_decoded.capture
+2025.05.09 14:34:08 40  INFO    1 =  CAPTURE_RESPONSES_DECODED               :false
+2025.05.09 14:34:08 40  INFO    1 =  CAPTURE_RESPONSES_DECODED_TO_FILE       :smppsim_decoded.capture
+2025.05.09 14:34:08 40  INFO    1 =  CALLBACK                                :false
+2025.05.09 14:34:08 41  INFO    1 = Delivery receipts will always have optional parameter with TLV=5123/10/34343132333435363738
+2025.05.09 14:34:08 41  INFO    1 = Delivery receipts will include standard optional parameters if client supports 3.4 or later
+2025.05.09 14:34:08 41  INFO    1 =  
+2025.05.09 14:34:08 41  INFO    1 ==============================================================
+2025.05.09 14:34:08 50  INFO    12 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 50  INFO    13 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 50  INFO    14 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 50  INFO    15 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 50  INFO    20 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 50  INFO    17 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 51  INFO    18 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 51  INFO    16 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 51  INFO    21 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 51  INFO    19 StandardConnectionHandler waiting for connection
+2025.05.09 14:34:08 53  INFO    22 Starting HttpHandler thread. Listening on port 88 for connections
+2025.05.09 14:34:08 53  INFO    23 Starting InboundQueue service....
+2025.05.09 14:34:08 53  INFO    24 Starting Lifecycle Service (OutboundQueue)
+2025.05.09 14:34:08 54  INFO    24 Lifecycle Service: OutboundQueue is empty  - waiting
+2025.05.09 14:34:08 54  INFO    23 InboundQueue: empty  - waiting
+2025.05.09 14:34:08 54  INFO    26 Starting DelayedInboundQueue service....
+2025.05.09 14:35:08 57  INFO    26 Processing 0 messages in the delayed inbound queue
+2025.05.09 14:36:08 64  INFO    26 Processing 0 messages in the delayed inbound queue
+2025.05.09 14:37:08 69  INFO    26 Processing 0 messages in the delayed inbound queue
+2025.05.09 14:38:08 77  INFO    26 Processing 0 messages in the delayed inbound queue
+2025.05.09 14:39:08 82  INFO    26 Processing 0 messages in the delayed inbound queue
+2025.05.09 14:40:08 95  INFO    26 Processing 0 messages in the delayed inbound queue
+2025.05.09 14:41:08 100 INFO    26 Processing 0 messages in the delayed inbound queue
